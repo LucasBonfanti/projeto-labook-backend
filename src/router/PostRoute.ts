@@ -1,9 +1,9 @@
 import express from "express";
 import { PostController } from "../controller/PostController";
 import { PostBusiness } from "../business/PostBusiness";
-import { PostDataBase } from "../database/PostDataBase";
+import { PostDataBase } from "../database/PostDatabase";
 import { IdGenerator } from "../services/IdGenerator";
-import { LikesDislikesDataBase } from "../database/LikeDislikesDataBase";
+import { LikesDislikesDataBase } from "../database/LikeDislikeDatabase";
 import { TokenManager } from "../services/TokenManager";
 
 export const postRoute = express.Router();

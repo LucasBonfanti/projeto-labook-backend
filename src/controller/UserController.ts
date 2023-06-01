@@ -3,8 +3,8 @@ import { GetUsersSchema } from "../dtos/users/GetUsers.dto";
 import { UserBusiness } from "./../business/UserBusiness";
 import { BaseError } from "../errors/BaseError";
 import { Request, Response } from "express";
-import { SignupSchema } from "../dtos/users/Signup.dtos";
-import { LoginSchema } from "../dtos/users/login.dto";
+import { SignupSchema } from "../dtos/users/Signup.dto";
+import { LoginSchema } from "../dtos/users/Login.dto";
 
 export class UserController {
     

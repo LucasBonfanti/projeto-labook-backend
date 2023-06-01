@@ -1,10 +1,10 @@
 import { PostBusiness } from "../business/PostBusiness";
 import { Request, Response } from "express";
 import { BaseError } from "../errors/BaseError";
-import { CreatePostSchema } from "../dtos/posts/createPost.dto";
+import { CreatePostSchema } from "../dtos/posts/CreatePost.dto";
 import { GetPostSchema } from "../dtos/posts/GetPosts.dtos";
-import { DeletePostSchema } from "../dtos/posts/deletePost.dto";
-import { UpdaterPostSchema } from "../dtos/posts/updatePost.dto";
+import { DeletePostSchema } from "../dtos/posts/DeletePost.dto";
+import { UpdaterPostSchema } from "../dtos/posts/UpdatePost.dto";
 import { ZodError } from "zod";
 
 export class PostController {

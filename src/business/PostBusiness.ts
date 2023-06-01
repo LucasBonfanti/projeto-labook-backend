@@ -1,29 +1,18 @@
 import { IdGenerator } from "./../services/IdGenerator";
-import { PostDataBase } from "../database/PostDataBase";
-import {
-  CreatePostInputDTO,
-  CreatePostOutputDTO,
-} from "../dtos/posts/createPost.dto";
+import { PostDataBase } from "../database/PostDatabase";
+import { CreatePostInputDTO, CreatePostOutputDTO } from "../dtos/posts/CreatePost.dto";
 import { PostDB, Posts } from "../models/Posts";
 import { BadRequestError } from "../errors/BadRequestError";
-import { GetPostInputDTO, GetPostsOutputDTO } from "../dtos/posts/getPosts.dto";
-import {
-  DeletePostInputDTO,
-  DeletePostOutputDTO,
-} from "../dtos/posts/deletePost.dto";
-import { LikesDislikesDataBase } from "../database/LikeDislikesDataBase";
+import { GetPostInputDTO, GetPostsOutputDTO } from "../dtos/posts/GetPosts.dtos";
+import { DeletePostInputDTO, DeletePostOutputDTO } from "../dtos/posts/DeletePost.dto";
+import { LikesDislikesDataBase } from "../database/LikeDislikeDatabase";
 import { LikesDislikesDB } from "../models/LikesDislikes";
-import { LikesDislikesOutputDTO } from "../dtos/likesDislikes/likes-dislikes.dto";
-import {
-  UpdatePostInputDTO,
-  UpdatePostOutputDTO,
-} from "../dtos/posts/updatePost.dto";
+import { UpdatePostInputDTO, UpdatePostOutputDTO } from "../dtos/posts/UpdatePost.dto";
 import { TokenManager } from "../services/TokenManager";
 import { UnauthorizedError } from "../errors/UnauthorizedError";
 import { NotFoundError } from "../errors/NotFoundError";
 import { ForbiddenError } from "../errors/ForbiddenError";
-import { PostModel } from "../models/Posts";
-import { USER_ROLES } from "../models/User";
+import { USER_ROLES } from "../models/Users";
 
 export class PostBusiness {
   constructor(

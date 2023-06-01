@@ -1,14 +1,14 @@
-import { GetUsersInputDTO,GetUsersOutputDTO } from "./../dtos/users/getUsers.dto";
+import { GetUsersInputDTO,GetUsersOutputDTO } from "./../dtos/users/GetUsers.dto";
   import { IdGenerator } from "../services/IdGenerator";
   import { TokenManager, TokenPayload } from "../services/TokenManager";
-  import { UserDataBase } from "./../database/UserDataBase";
-  import { USER_ROLES, User } from "../models/User";
-  import { SignupInputDTO, SignupOutputDTO } from "../dtos/users/signup.dto";
+  import { UserDataBase } from "./../database/UserDatabase";
+  import { USER_ROLES, User } from "../models/Users";
+  import { SignupInputDTO, SignupOutputDTO } from "../dtos/users/Signup.dto";
   import { BadRequestError } from "../errors/BadRequestError";
-  import { LoginInputDTO, LoginOutputDTO } from "../dtos/users/login.dto";
+  import { LoginInputDTO, LoginOutputDTO } from "../dtos/users/Login.dto";
   import { NotFoundError } from "../errors/NotFoundError";
   import { HashManager } from "../services/HashManager";
-  import { LikesDislikesDataBase } from "../database/LikeDislikesDataBase";
+  import { LikesDislikesDataBase } from "../database/LikeDislikeDatabase";
   
   export class UserBusiness {
     constructor(
