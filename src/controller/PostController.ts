@@ -2,7 +2,7 @@ import { PostBusiness } from "../business/PostBusiness";
 import { Request, Response } from "express";
 import { BaseError } from "../errors/BaseError";
 import { CreatePostSchema } from "../dtos/posts/createPost.dto";
-import { GetPostSchema } from "../dtos/posts/getPosts.dto";
+import { GetPostSchema } from "../dtos/posts/GetPosts.dtos";
 import { DeletePostSchema } from "../dtos/posts/deletePost.dto";
 import { UpdaterPostSchema } from "../dtos/posts/updatePost.dto";
 import { ZodError } from "zod";
